@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<!-- Form  -->
+<div class="my-10 mx-10 ">
+     <div class="bg-white shadow-md rounded-lg p-5 w-full max-w-2xl">
+    <h2 class="text-xl font-bold mb-4 text-center">Form Penjualan</h2>
+    <form>
+        <div class="mb-4">
+            <label class="block text-black-700 text-base">Produk</label>
+            <input type="text" class="w-full p-2 border rounded-md">
+        </div>
+        <div class="mb-4">
+            <label class="block text-black-700 text-base">Jumlah</label>
+            <input type="number" class="w-full p-2 border rounded-md">
+        </div>
+        <div class="mb-4">
+            <label class="block text-black-700 text-base">Harga</label>
+            <input type="text" class="w-full p-2 border rounded-md">
+        </div>
+        <button class="w-full bg-[#FF8989] hover:bg-[#FFB4A2] text-white text-base font-bold py-2 px-4 rounded">
+            Tambahkan
+        </button>
+    </form>
+</div>
+</div>
+
+<!-- Tabel Penjualan -->
+<div class="my-10 mx-10">
+        <div class="bg-white shadow-md rounded-lg p-5 w-full max-w-2xl">
+            <h2 class="text-xl font-bold mb-4 text-center">Data Penjualan Bulanan</h2>
+            <table class="w-full border-collapse border border-gray-200">
+                <thead class="bg-[#FF8989] text-white">
+                    <tr>
+                        <th class="border p-2" rowspan="2">No</th>
+                        <th class="border p-2" rowspan="2">Produk</th>
+                        <th class="border p-2" colspan="2">Penjualan</th>
+                    </tr>
+                    <tr>
+                        <th class="border p-2">Jumlah</th>
+                        <th class="border p-2">Harga Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center">
+                        <td class="border p-2">1</td>
+                        <td class="border p-2">Sepatu</td>
+                        <td class="border p-2">50</td>
+                        <td class="border p-2">Rp. 25.000.000</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="border p-2">2</td>
+                        <td class="border p-2">Tas</td>
+                        <td class="border p-2">30</td>
+                        <td class="border p-2">Rp. 15.000.000</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="border p-2">3</td>
+                        <td class="border p-2">Jam Tangan</td>
+                        <td class="border p-2">20</td>
+                        <td class="border p-2">Rp. 10.000.000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="text-center font-bold">
+                        <td class="border p-2" colspan="2">Total Penjualan</td>
+                        <td class="border p-2">100</td>
+                        <td class="border p-2">Rp. 50.000.000</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+</div>
+
+<!-- Biodata -->
+ <div class="my-5 mx-10">
+        <div class="bg-[#FF8989] shadow-md rounded-lg p-5 w-96">
+            <h4 class="text-base font-bold mb-2">Program dibuat oleh:</h4>
+            <p  class="mb-2">Nama: Delia Nur Ilmi Salam</p>
+            <p  class="mb-2">Kelas: 4C-Informatika</p>
+            <p  class="mb-2">NPM: 2310631170069</p>
+        </div>
+    </div>
+</body>
+</html>
