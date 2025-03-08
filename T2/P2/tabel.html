@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan tabel</title>
+    <style>
+        .sales-table{
+            /* border: 1px solid; */
+            width: 50%;
+            /* dengan elemen lain di luar */
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0px 0px 8px rgb(0, 0, 0);
+        }
+
+        th, td {
+            /* antar elemen di dalam */
+            padding: 6px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="sales-table">
+         <h2>Data penjualan</h2>
+         <table border="1">
+        <!-- head dari table  -->
+        <thead>
+            <!-- tr table row  untuk barisnya--> 
+            <tr>
+                <!-- untuk datanya  -->
+                <td>No</td>
+                <td>Produk</td>
+                <td>Jumlah</td>
+                <td>Harga</td>
+            </tr>
+        </thead>
+        <!-- untuk isinya atau bodynya -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pensil</td>
+                <td>5</td>
+                <td>Rp. 4.000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pulpen</td>
+                <td>10</td>
+                <td>Rp. 5.000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Penghapus</td>
+                <td>2</td>
+                <td>Rp. 2.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- colspan untuk memetakan beberapa kolom jadi 1 / panjangnya / ke samping-->
+                 <!-- rowspan untuk memetakan baris  / ke bawah-->
+                <td colspan="2">Total</td>
+                <td>17</td>
+                <td>Rp. 11.000</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+</body>
+</html>

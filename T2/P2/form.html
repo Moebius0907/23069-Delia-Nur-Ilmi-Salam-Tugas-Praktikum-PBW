@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .form-container{
+            margin: auto;
+            display: flex;
+            width: max-content;
+            /* border: 1px solid; */
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .card{
+            padding: 15px;
+            width: 15rem;
+            box-shadow: 0px 4px 6px rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+
+        .form-group{
+            /* rem skala lebih besar daripada px dan lebih fleksibel */
+            margin-bottom: 1rem; 
+            display: flex;
+            /* judul atas, form di bawah */
+            flex-direction: column;
+        }
+
+        button{
+            background-color: rgb(48, 144, 159);
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="card">
+            <h2>Form Data Buku</h2>
+        <form action="" method="post">
+        <div class="form-group">
+            <label for="">Judul Buku</label>
+            <input type="text">
+        </div>
+         <div class="form-group">
+            <label for="">Penulis</label>
+            <input type="text">
+        </div>
+         <div class="form-group">
+            <label for="">Tahun terbit</label>
+            <input type="number">
+        </div>
+    </form>
+    <button>Submit</button>
+        </div>
+    </div>
+</body>
+</html>
