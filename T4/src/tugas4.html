@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Tugas 4 PBW</title>
+</head>
+<body>
+    <main>
+        <!-- Navbar -->
+        <header class="w-full bg-lime-200 p-5 text-[#347928] bold">
+            <div class="container mx-auto flex justify-center gap-8 text-base">
+                <h1 class="hover:bg-[#347928] hover:bg-opacity-50 hover:border-[#347928] hover:border-2 rounded-full hover:px-3"><a href="#tentang">Tentang</a></h1>
+                <h1 class="hover:bg-[#347928] hover:bg-opacity-50 hover:border-[#347928] hover:border-2 rounded-full hover:px-3"><a href="#proyek">Proyek</a></h1>
+                <h1 class="hover:bg-[#347928] hover:bg-opacity-50 hover:border-[#347928] hover:border-2 rounded-full hover:px-3"><a href="#kontak">Kontak</a></h1>
+            </div>
+            <div class="container mx-auto text-center p-2">
+                <h1 class="text-3xl font-bold">Portofolio Saya</h1>
+                <h1 class="text-base">Designer UI/UX</h1>
+            </div>
+        </header> 
+
+        <!-- Tentang saya -->
+        <section id="tentang" class="flex flex-col justify-center items-center p-8 bg-lime-100">
+            <div class="flex justify-center">
+                <img src="img/Delia.jpg" alt="Foto  Delia" class="w-48 h-48 border-[#347928] border-2 border-opacity-70 rounded-full hover:animate-pulse">
+            </div>
+            <div>
+                <h1 class="text-3xl font-bold text-[#347928] py-3">Tentang Saya</h1>
+            </div>
+            <div>
+                <p class="mx-auto flex justify-center text-center text-[#347928]">Saya Delia Nur Ilmi Salam, mahasiswi Informatika semester 4 dengan minat pada bidang Design UI/UX. 
+                <br>Saya memiliki goals financial freedom di umur 30-an
+                </p>
+            </div>
+        </section>
+
+        <!-- Proyek -->
+         <section  id="proyek" class="bg-lime-200 p-5">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-3xl font-bold text-[#347928] py-3">Proyek</h1>
+            </div>
+            <section class="grid grid-cols-2 gap-10 p-2 mx-40">
+
+            <!-- proyek 1 -->
+            <div class="border-[#347928] rounded-md bg-lime-100 p-5">
+                <img src="img/sahabatTani.jpg" alt="sahabatTani"  class="border-4 border-lime-200 rounded-md hover:scale-105">
+                <h1 class="pt-5 font-bold text-[#347928] ">Proyek 1</h1>
+                <p class="text-[#347928]">SahabatTani merupakan proyek design UI/UX untuk aplikasi mobile di bidang e-commerce hasil pertanian. 
+                    Dengan aplikasi ini, petani bisa menjual langsung hasil tani mereka tanpa perantara</p>
+            </div>
+
+            <!-- proyek 2  -->
+            <div class="border-[#347928] rounded-md bg-lime-100 p-5">
+                <img src="img/Sekuy.jpg" alt="Sekuy" class="border-4 border-lime-200 rounded-md hover:scale-105">
+                <h1 class="pt-5 font-bold text-[#347928]">Proyek 2</h1>
+                <p class="text-[#347928]">SeKuy merupakan proyek design UI/UX untuk aplikasi mobile di bidang penyewaan barang. Fitur spesial dari aplikasi ini yaitu rekomendasi barang terdekat yang bisa disewa oleh pengguna</p>
+            </div>
+
+        </section>
+        </section>
+
+        <!-- kontak -->
+        <section id="kontak" class="flex flex-col justify-center items-center p-8 bg-lime-100 text-[#347928]">
+            <h1 class="text-3xl font-bold py-3">Kontak</h1>
+            <h1>Hubungi saya melalui kontak di bawah ini</h1>
+            <div class="flex gap-6 mt-6">
+                 <!-- Gmail -->
+                  <a href="mailto:delianurilmi@gmail.com" target="_blank" class="bg-lime-200 p-4 rounded-md flex items-center justify-center shadow-lg">
+                    <img src="img/gmail.png" alt="Gmail" class="w-10 h-10 hover:animate-bounce">
+                </a>
+                 <!-- WhatsApp -->
+                  <a href="https://wa.me/6288218985467" target="_blank" class="bg-lime-200 p-4 rounded-md flex items-center justify-center shadow-lg">
+                    <img src="img/whatsapp.png" alt="WhatsApp" class="w-10 h-10 hover:animate-bounce">
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
