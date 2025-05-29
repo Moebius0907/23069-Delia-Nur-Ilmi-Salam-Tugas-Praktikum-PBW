@@ -1,0 +1,169 @@
+/* Animasi untuk elemen muncul dari bawah ke atas dengan efek memudar */
+@keyframes slideIn {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animasi untuk menghilangkan elemen secara perlahan (fade out) */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Animasi mengambang naik turun seperti melayang */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Animasi garis centang menggambar secara bertahap */
+@keyframes checkmark-stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Animasi efek skala pada checkmark */
+@keyframes checkmark-scale {
+    0%, 100% {
+        transform: none;
+    }
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+/* Animasi efek fill biru pada latar belakang checkmark */
+@keyframes checkmark-fill {
+    100% {
+        box-shadow: inset 0 0 0 100px #60B5FF;
+    }
+}
+
+/* Tambahkan di CSS Anda */
+.hero-image {
+    min-height: 400px;
+}
+
+.hero-image img.floating {
+    animation: floating 3s ease-in-out infinite;
+    transform-origin: center;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100px;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+
+/* Elemen dengan kelas ini akan melayang naik-turun */
+.floating {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Delay animasi mengambang untuk elemen kedua */
+.floating-delay-1 {
+    animation: float 4s ease-in-out infinite 0.5s;
+}
+
+/* Delay animasi mengambang untuk elemen ketiga */
+.floating-delay-2 {
+    animation: float 4s ease-in-out infinite 1s;
+}
+
+/* Delay animasi mengambang untuk elemen keempat */
+.floating-delay-3 {
+    animation: float 4s ease-in-out infinite 1.5s;
+}
+
+/* Transisi halus untuk navbar */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+/* Gaya navbar saat scroll: padding mengecil, latar belakang memudar */
+.navbar.scrolled {
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+}
+
+/* Transisi menu mobile agar bergeser dengan halus */
+.mobile-menu {
+    transition: all 0.3s ease;
+}
+
+/* Gaya tanda kutip besar untuk testimonial */
+.testimonial-quote::before {
+    content: '"';
+    font-size: 4rem;
+    color: rgba(107, 179, 255, 0.1);
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    line-height: 1;
+    z-index: 0;
+}
+
+/* Animasi untuk menyembunyikan notifikasi */
+.notification.hide {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+/* Warna dan bayangan untuk notifikasi sukses */
+.notification-success {
+    background: linear-gradient(135deg, #60B5FF, #4CC9F0);
+    box-shadow: 0 10px 20px #60B5FF;
+}
+
+/* Tampilan checkmark animasi saat sukses */
+.checkmark {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 5;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 0 auto;
+    box-shadow: 0 0 0 #60B5FF;
+    animation: checkmark-fill 0.4s ease-in-out 0.4s forwards, checkmark-scale 0.3s ease-in-out 0.9s both;
+}
+
+/* Lingkaran pada checkmark dengan animasi stroke */
+.checkmark-circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 5;
+    stroke-miterlimit: 10;
+    stroke: #fff;
+    fill: none;
+    animation: checkmark-stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+/* Garis centang pada checkmark dengan animasi menggambar */
+.checkmark-check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: checkmark-stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
